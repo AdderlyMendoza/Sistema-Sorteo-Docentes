@@ -1,0 +1,15 @@
+<!-- templates/docentes/lista_asignaciones.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Asignaciones</title>
+</head>
+<body>
+    <h1>Lista de Asignaciones</h1>
+    <ul>
+        {% for asignacion in asignaciones %}
+            <li>{{ asignacion.docente.nombres }} {{ asignacion.docente.ap_paterno }} {{ asignacion.docente.ap_materno }} -> {{ asignacion.area.area }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
